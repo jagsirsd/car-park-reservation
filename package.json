@@ -6,7 +6,11 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node tests/runner.ts",
+    "test:stress": "ts-node tests/runner.ts --stress",
+    "test:boundary": "ts-node tests/runner.ts --boundary",
+    "test:functional": "ts-node tests/runner.ts --functional"
   },
   "dependencies": {
     "sql.js": "^1.10.2",
